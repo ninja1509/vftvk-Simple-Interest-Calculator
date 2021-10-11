@@ -13,7 +13,8 @@ function compute()
     //Conditional operation performed to check if the principle is valid or not
     if(principal ==undefined || principal <=0){
         alert("Enter a positive number");
-        principal.focus();
+        document.getElementById("principal").focus();
+        return
     }
     else{
         var inr = "If you deposit <span class='highl'>" + principal+",</span><br>";
@@ -34,12 +35,4 @@ function updateRate(){
 
 }
 
-//This function is to validate and focus on 0 or -ve principal value.
-function validateAmount() { 
-    var principal = document.getElementById("principal").value; 
-    var lessThanZero = parseInt(principal) >= 0; 
-    if (!lessThanZero) {
-    document.getElementById("principal").focus();
-    document.getElementById("principal").select();
-    } 
-    }
+
