@@ -17,10 +17,10 @@ function compute()
         return
     }
     else{
-        var inr = "If you deposit <span class='highl'>" + principal+",</span><br>";
-        var ra = "at an interest rate of <span class='highl'>" + rate+"%,</span><br>";
-        var am = "You will receive an amount of <span class='highl'>" + interest+",</span><br>";
-        var ye = "in the year <span class='highl'>" + year +"</span>"; 
+        var inr = "If you deposit <mark>" + principal+",</mark><br>";
+        var ra = "at an interest rate of <mark>" + rate+"%,</mark><br>";
+        var am = "You will receive an amount of <mark>" + interest+",</mark><br>";
+        var ye = "in the year <mark>" + year +"</mark>";  
         
         document.getElementById("result").innerHTML=inr+ra+am+ye;
     }
